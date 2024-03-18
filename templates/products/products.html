@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+<!-- {% load static %} -->
+{% block  content %}
+<h1>  hi baby </h1> 
+
+<!-- x={'pro':products.objects.all()} -->
+{% for x in pro %} 
+
+<h1>{{x.name}}</h1> 
+<h1>{{x.content}}</h1> 
+<h1>{{x.price}}</h1> 
+<img src="{{x.image.url}}" >
+
+{% endfor %}
+
+{%endblock content %}
